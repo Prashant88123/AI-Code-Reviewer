@@ -7,7 +7,7 @@ from style_checker import show_style_corrected
 from error_detector import detect_errors
 from ai_suggester import get_ai_suggestions
 
-
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 # ------------------ HELPERS ------------------
 
 def stream_data(text):
